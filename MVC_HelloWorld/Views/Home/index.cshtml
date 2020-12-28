@@ -1,0 +1,25 @@
+﻿
+@{
+    //c# kodu kullanıyoruz
+    ViewBag.Title = DateTime.Now.ToShortDateString();
+}
+
+<!--Her şey aymı burada html-->
+
+<h2>MUSTAFA KOCA</h2>
+
+@for (int j = 0; j < 7; j++)
+{
+    <a href="http://www.mustafakoca.com/@j">@j - Mustafa Koca Link</a>
+}
+
+<div align="center">
+    @{
+        int i = 0;
+        while (i < 7)
+        {
+            Response.Write(" " + i);
+            i++;
+        }
+    }
+</div>
